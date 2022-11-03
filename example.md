@@ -1,35 +1,33 @@
 ---
 theme: ./
+# The layout default for the first slide is cover.
+# You can change it.
+layout: cover
+# Specify a cover background image
+# background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 # Slidev Theme Easy
 
-Presentation slides for developers
+Cover background is random by default but can be configured
 
 <div class="pt-12">
-  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
+  <span @click="next" class="py-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
     Press Space for next page <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
 ---
+layout: intro
+class: opacity-75
+---
 
-# What is Slidev?
+# Intro layout
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Specify the image with `image` and configure additional styles for the image with `class`.
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+The above image specifies transparency with `class: opacity-75`.
+Also, use `left: false` to toggle the color block to the right.
 
 
 ---
@@ -38,7 +36,7 @@ Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 Hover on the bottom-left corner to see the navigation's controls panel
 
-### Keyboard Shortcuts
+## Keyboard Shortcuts
 
 |     |     |
 | --- | --- |
@@ -56,7 +54,7 @@ image: 'https://source.unsplash.com/collection/94734566/1920x1080'
 
 Use code snippets and get the highlighting directly!
 
-```ts
+```ts {monaco}
 interface User {
   id: number
   firstName: string
