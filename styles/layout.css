@@ -1,5 +1,6 @@
 :root {
   --slidev-theme-primary: #5d8392;
+  --slidev-theme-primary-rgb: 93,131,146;
 }
 
 #slide-content {

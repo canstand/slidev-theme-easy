@@ -5,6 +5,10 @@ theme: ./
 layout: cover
 # Specify a cover background image
 # background: https://source.unsplash.com/collection/94734566/1920x1080
+css: unocss
+themeConfig:
+  primary: '#d97706'
+  primary-rgb: '217,119,6'
 ---
 
 # Slidev Theme Easy
@@ -31,43 +35,70 @@ Also, use `left: false` to toggle the color block to the right.
 
 
 ---
+layout: image-left
+image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+equal: true
+imageFrame: true
+---
 
-# Navigation
+# Theme Color
 
-Hover on the bottom-left corner to see the navigation's controls panel
+The theme color configuration needs to provide both HEX format and RGB format, in order to support the theme background with transparency.
 
-## Keyboard Shortcuts
+## Usage
 
-|     |     |
-| --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+```md
+---
+themeConfig:
+  primary: #ff0000
+  primary-rgb: '255,0,0'
+---
+```
+
 
 ---
 layout: image-right
 image: 'https://source.unsplash.com/collection/94734566/1920x1080'
 ---
 
-# Code
+# Image Right
 
-Use code snippets and get the highlighting directly!
+Shows an image on the right side of the screen, the content will be placed on the left side.
 
-```ts {monaco}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
+## Usage
 
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
+```md
+---
+layout: image-right
+
+# the image source
+image: ./path/to/the/image
+
+# a custom class name to the content
+class: my-cool-content-on-the-left
+
+# equal or one third
+equal: true
+
+# show frame
+imageFrame: false
+---
 ```
+
+---
+
+# Theme Color
+
+The theme color configuration needs to provide both HEX format and RGB format, in order to support the theme background with transparency.
+
+```md
+  ---
+  themeConfig:
+    primary: #ff0000
+    primary: '255,0,0'
+  ---
+```
+
 
 ---
 layout: center

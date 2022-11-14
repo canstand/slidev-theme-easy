@@ -21,7 +21,7 @@ const style = computed(() => handleBackground(props.image))
 
 <template>
   <div class="slidev-layout intro">
-    <div class="w-1/4 h-full bg-$slidev-theme-primary opacity-30" :class="[left ? 'abs-tl' : 'abs-tr']"></div>
+    <div class="w-1/4 h-full bga-slidev-theme-primary bg-opacity-30" :class="[left ? 'abs-tl' : 'abs-tr']"></div>
     <div class="absolute top-1/4 left-30 w-3/4 h-1/3" :class="class" :style="style"></div>
     <div class="mt-4" :class="[left ? 'ml-1/4 mr-16' : 'mr-1/4 ml-16']">
       <slot />
