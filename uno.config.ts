@@ -11,6 +11,7 @@ import {
 export default defineConfig({
   shortcuts: [
     {
+      'bg-main': 'bg-white text-[#181818] dark:(bg-[#121212] text-[#ddd])',
       'abs-tl': 'absolute top-0 left-0',
       'abs-tr': 'absolute top-0 right-0',
       'abs-bl': 'absolute bottom-0 left-0',
