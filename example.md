@@ -9,6 +9,8 @@ css: unocss
 themeConfig:
   primary: '#d97706'
   primary-rgb: '217,119,6'
+  title: slidev-theme-easy demo
+  github: CanStand
 ---
 
 # Slidev Theme Easy
@@ -117,7 +119,7 @@ imageFrame: false
 
 ---
 layout: image-bottom
-# image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+image: 'https://source.unsplash.com/collection/94734566/1920x1080'
 thin: true
 ---
 
