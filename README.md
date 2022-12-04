@@ -24,6 +24,91 @@ This theme provides the following layouts:
 
 > TODO:
 
+### Cover
+
+Usage:
+```md
+layout: cover
+background: 'https://source.unsplash.com/collection/94734566/1920x1080'
+```
+![cover](example-export/001.png)
+
+### Intro
+Usage:
+```md
+layout: intro
+image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+class: opacity-75
+# use `left: false` to toggle the color block to the right
+left: true
+
+```
+![intro](example-export/002.png)
+
+### Image-Left
+
+Usage:
+```md
+layout: image-left
+
+# the image source
+image: ./path/to/the/image
+
+# a custom class name to the content
+class: my-cool-content-on-the-right
+
+# equal or one third
+equal: false
+
+# show frame
+imageFrame: false
+```
+![image-left](example-export/005.png)
+
+```md
+layout: image-left
+equal: true
+imageFrame: true
+```
+![image-left](example-export/003.png)
+
+### Image-Right
+
+Usage:
+```md
+layout: image-right
+
+# the image source
+image: ./path/to/the/image
+
+# a custom class name to the content
+class: my-cool-content-on-the-left
+
+# equal or one third
+equal: true
+
+# show frame
+imageFrame: false
+```
+![image-right](example-export/004.png)
+
+### Image-Bottom
+
+Usage:
+```md
+layout: image-bottom
+
+# the image source, can be empty (show bg color)
+image: ./path/to/the/image
+
+# a custom class name to the content
+class: my-cool-content
+
+# image height, one-sixth or one-third
+thin: true
+```
+![image-bottom](example-export/006.png)
+
 ## Components
 
 This theme provides the following components:
