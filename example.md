@@ -43,7 +43,7 @@ imageFrame: true
 
 # Theme Color
 
-The theme color configuration needs to provide both HEX format and RGB format, in order to support the theme background with transparency.
+Theme color variables must provide both HEX and RGB formats to support background color transparency.
 
 ## Usage
 
@@ -86,19 +86,59 @@ imageFrame: false
 ```
 
 ---
+layout: image-left
+image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+equal: false
+---
 
-# Theme Color
+# Image Left
 
-The theme color configuration needs to provide both HEX format and RGB format, in order to support the theme background with transparency.
+Shows an image on the left side of the screen, the content will be placed on the right side.
+
+## Usage
+
+```md
+---
+layout: image-left
+
+# the image source
+image: ./path/to/the/image
+
+# a custom class name to the content
+class: my-cool-content-on-the-right
+
+# equal or one third
+equal: false
+
+# show frame
+imageFrame: false
+---
+```
+
+---
+layout: image-bottom
+# image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+thin: true
+---
+
+# Image Bottom
+
+Shows an image at bottom of the screen. If empty, will show bgColor.
 
 ```md
   ---
-  themeConfig:
-    primary: #ff0000
-    primary: '255,0,0'
+layout: image-bottom
+
+# the image source, can be empty (show bg color)
+image: ./path/to/the/image
+
+# a custom class name to the content
+class: my-cool-content
+
+# image height, one-sixth or one-third
+thin: true
   ---
 ```
-
 
 ---
 layout: center
