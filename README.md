@@ -2,11 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/slidev-theme-easy?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-easy)
 
-A simple theme for [Slidev](https://github.com/slidevjs/slidev).
-
-Live demo: [...]
-
-> TODO:
+A simple theme for [Slidev](https://github.com/slidevjs/slidev). The main feature is the support for configuring theme colors with transparency.
 
 ## Install
 
@@ -16,13 +12,21 @@ Add the following frontmatter to your `slides.md`. Start Slidev then it will pro
 theme: <b>easy</b>
 ---</code></pre>
 
+Theme color variables must provide both HEX and RGB formats to support background color transparency.
+
+```md
+---
+themeConfig:
+  primary: #ff0000
+  primary-rgb: '255,0,0'
+---
+```
+
 Learn more about [how to use a theme](https://sli.dev/themes/use).
 
 ## Layouts
 
 This theme provides the following layouts:
-
-> TODO:
 
 ### Cover
 
@@ -109,16 +113,10 @@ thin: true
 ```
 ![image-bottom](example-export/006.png)
 
-## Components
-
-This theme provides the following components:
-
-> TODO:
-
 ## Contributing
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
+- `pnpm install`
+- `pnpm dev` to start theme preview of `example.md`
 - Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+- `pnpm export` to generate the preview PDF
+- `pnpm screenshot` to generate the preview PNG
