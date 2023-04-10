@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "es2020",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "types": [
+      "vite/client",
+      "node"
+    ],
+    "jsx": "preserve"
+  },
+  "include": [
+    "./*.ts",
+    "components/**/*.vue",
+    "layouts/**/*.vue",
+    "setup/*.ts"
+  ],
+  "exclude": [
+    "**/dist/**",
+    "node_modules"
+  ]
+}
