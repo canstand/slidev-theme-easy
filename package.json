@@ -13,7 +13,7 @@
   "author": "Can Stand <canstand@outlook.com>",
   "engines": {
     "node": ">=14.0.0",
-    "slidev": ">=0.40.9"
+    "slidev": ">=0.42.7"
   },
   "scripts": {
     "build": "slidev build example.md",
@@ -22,16 +22,17 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
-    "@iconify-json/mdi": "^1.1.50",
-    "@slidev/types": "^0.40.9",
+    "@iconify-json/mdi": "^1.1.54",
+    "@slidev/types": "^0.42.7",
     "codemirror-theme-vars": "^0.1.2",
     "prism-theme-vars": "^0.2.4",
-    "theme-vitesse": "^0.6.4",
-    "unocss": "^0.51.2"
+    "theme-vitesse": "^0.7.2",
+    "unocss": "^0.54.2"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.40.9",
-    "playwright-chromium": "^1.32.2"
+    "@slidev/cli": "^0.42.7",
+    "@types/node": "^20.4.8",
+    "playwright-chromium": "^1.36.2"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {

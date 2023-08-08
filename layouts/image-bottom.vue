@@ -8,20 +8,24 @@ const props = defineProps({
   class: {
     type: String,
   },
+  backgroundSize: {
+    type: String,
+    default: 'cover',
+  },
   thin: {
     type: Boolean,
     default: false
   }
 })
-const style = computed(() => handleBackground(props.image))
+const style = computed(() => handleBackground(props.image, false, props.backgroundSize))
 </script>
 
 <template>
   <div class="h-full">
-    <div class="slidev-layout default" :class="props.class" >
+    <div class="slidev-layout default" :class="props.class">
       <slot />
     </div>
-    <div class="abs-bl -z-1 w-full bga-slidev-theme-primary bg-opacity-30" :class="props.thin ? 'h-1/6' : 'h-1/3'" >
+    <div class="abs-bl -z-1 w-full bga-slidev-theme-primary bg-opacity-30" :class="props.thin ? 'h-1/6' : 'h-1/3'">
       <div class="w-full h-full" :style="style" />
     </div>
   </div>
