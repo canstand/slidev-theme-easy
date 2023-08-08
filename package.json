@@ -12,7 +12,7 @@
   },
   "author": "Can Stand <canstand@outlook.com>",
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">=16.14.0",
     "slidev": ">=0.42.7"
   },
   "scripts": {
