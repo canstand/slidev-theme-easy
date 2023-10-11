@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-easy",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "slidev-theme",
     "slidev"
@@ -12,7 +12,7 @@
   },
   "author": "Can Stand <canstand@outlook.com>",
   "engines": {
-    "node": ">=16.14.0",
+    "node": ">=18.0.0",
     "slidev": ">=0.42.7"
   },
   "scripts": {
@@ -23,23 +23,22 @@
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.1.54",
-    "@slidev/types": "^0.42.7",
+    "@slidev/types": "^0.43.7",
     "codemirror-theme-vars": "^0.1.2",
     "prism-theme-vars": "^0.2.4",
-    "theme-vitesse": "^0.7.2",
-    "unocss": "^0.54.2"
+    "theme-vitesse": "^0.7.3",
+    "unocss": "^0.56.5"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.42.7",
-    "@types/node": "^20.4.8",
-    "playwright-chromium": "^1.36.2"
+    "@slidev/cli": "^0.43.7",
+    "@types/node": "^20.8.4",
+    "playwright-chromium": "^1.38.1"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
     "colorSchema": "both",
     "highlighter": "all",
     "defaults": {
-      "css": "unocss",
       "fonts": {
         "sans": "Nunito Sans",
         "mono": "Fira Code"
