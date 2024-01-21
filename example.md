@@ -38,7 +38,7 @@ Also, use `left: false` to toggle the color block to the right.
 
 ---
 layout: image-left
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+image: https://source.unsplash.com/collection/94734566/1920x1080
 equal: true
 imageFrame: true
 ---
@@ -49,7 +49,7 @@ Theme color variables must provide both HEX and RGB formats to support backgroun
 
 ## Usage
 
-```md
+```yaml
 ---
 themeConfig:
   primary: #ff0000
@@ -60,7 +60,7 @@ themeConfig:
 
 ---
 layout: image-right
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 # Image Right
@@ -69,7 +69,7 @@ Shows an image on the right side of the screen, the content will be placed on th
 
 ## Usage
 
-```md
+```yaml
 ---
 layout: image-right
 
@@ -87,9 +87,10 @@ imageFrame: false
 ---
 ```
 
+
 ---
 layout: image-left
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+image: https://source.unsplash.com/collection/94734566/1920x1080
 equal: false
 ---
 
@@ -99,7 +100,7 @@ Shows an image on the left side of the screen, the content will be placed on the
 
 ## Usage
 
-```md
+```markdown
 ---
 layout: image-left
 
@@ -117,9 +118,10 @@ imageFrame: false
 ---
 ```
 
+
 ---
 layout: image-bottom
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
+image: https://source.unsplash.com/collection/94734566/1920x1080
 thin: true
 ---
 
@@ -127,8 +129,8 @@ thin: true
 
 Shows an image at bottom of the screen. If empty, will show bgColor.
 
-```md
-  ---
+```yaml
+---
 layout: image-bottom
 
 # the image source, can be empty (show bg color)
@@ -139,8 +141,9 @@ class: my-cool-content
 
 # image height, one-sixth or one-third
 thin: true
-  ---
+---
 ```
+
 
 ---
 layout: center

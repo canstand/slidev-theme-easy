@@ -6,6 +6,7 @@
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "types": [
       "vite/client",
       "node"
