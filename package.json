@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-easy",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "keywords": [
     "slidev-theme",
     "slidev"
@@ -23,15 +23,16 @@
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.1.64",
-    "@slidev/types": "^0.46.2",
+    "@slidev/types": "^0.46.3",
     "codemirror-theme-vars": "^0.1.2",
     "prism-theme-vars": "^0.2.4",
     "theme-vitesse": "^0.7.5",
     "unocss": "^0.58.3"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.46.2",
-    "@types/node": "^20.11.5",
+    "@slidev/cli": "^0.46.3",
+    "@types/node": "^20.11.6",
+    "vite": "^5.0.12",
     "playwright-chromium": "^1.41.1"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
